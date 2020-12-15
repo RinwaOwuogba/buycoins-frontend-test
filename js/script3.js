@@ -184,7 +184,12 @@ const getUpdateTimeString = (date) => {
 	let dateString;
 
 	if (isToday(updatedAt)) {
-		dateString = `${Math.abs(today - updatedAt) / 36e5} hours ago`;
+		const hours = Math.floor((today - updatedAt) / 36e5);
+		if (hours > 0) {
+			dateString = `${hours} hours ago`;
+		} else {
+			dateString = `less than an hour ago`;
+		}
 	} else if (isWithinFewDays(updatedAt)) {
 		dateString = `${today.getDate() - updatedAt.getDate()} days ago`;
 	} else {
@@ -291,7 +296,8 @@ const showFetchError = () => {
 	errorElem.classList.add('fetch-error--visible');
 };
 
-const apiUrl = 'https://github-profile-repos-clone/.netlify/functions/user';
+const apiUrl =
+	'https://happy-villani-3c4576.netlify.app//.netlify/functions/user';
 const options = {
 	method: 'GET',
 };

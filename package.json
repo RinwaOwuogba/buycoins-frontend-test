@@ -1,0 +1,23 @@
+{
+  "name": "buycoins",
+  "version": "1.0.0",
+  "description": "A frontend test to try duplicating the github user's repositories page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinwaOwuogba/buycoins-frontend-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RinwaOwuogba/buycoins-frontend-test/issues"
+  },
+  "homepage": "https://github.com/RinwaOwuogba/buycoins-frontend-test#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}

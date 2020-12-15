@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 exports.handler = async (event, context) => {
 	const apiUrl = 'https://api.github.com/graphql';
 	const query = {
@@ -51,7 +53,7 @@ exports.handler = async (event, context) => {
 	};
 
 	try {
-		const accessToken = process.ACCESS_TOKEN;
+		const accessToken = process.env.ACCESS_TOKEN;
 		const options = {
 			method: 'POST',
 			headers: {
@@ -68,14 +70,14 @@ exports.handler = async (event, context) => {
 			throw new Error('unable to fetch data from github', response);
 		}
 
-		const data = response.json();
+		const data = await response.json();
 
 		return {
 			statusCode: 200,
 			body: JSON.stringify(data),
 		};
 	} catch (error) {
-		console.error(error);
+		console.log(error);
 		return {
 			statusCode: 500,
 			body: 'Error fetching data from github',
