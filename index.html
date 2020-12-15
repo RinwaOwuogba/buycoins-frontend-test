@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/profile.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/repositories.css" />
+
+		<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+		<title>Your Repositories -- dev</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="hamburger__wrapper">
+				<div class="hamburger__middle-line"></div>
+			</div>
+
+			<div class="header__logo-wrapper">
+				<svg
+					class="header__logo"
+					viewBox="0 0 512 512"
+					style="enable-background: new 0 0 512 512"
+					xml:space="preserve"
+				>
+					<g>
+						<g xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path
+									d="M255.968,5.329C114.624,5.329,0,120.401,0,262.353c0,113.536,73.344,209.856,175.104,243.872    c12.8,2.368,17.472-5.568,17.472-12.384c0-6.112-0.224-22.272-0.352-43.712c-71.2,15.52-86.24-34.464-86.24-34.464    c-11.616-29.696-28.416-37.6-28.416-37.6c-23.264-15.936,1.728-15.616,1.728-15.616c25.696,1.824,39.2,26.496,39.2,26.496    c22.848,39.264,59.936,27.936,74.528,21.344c2.304-16.608,8.928-27.936,16.256-34.368    c-56.832-6.496-116.608-28.544-116.608-127.008c0-28.064,9.984-51.008,26.368-68.992c-2.656-6.496-11.424-32.64,2.496-68    c0,0,21.504-6.912,70.4,26.336c20.416-5.696,42.304-8.544,64.096-8.64c21.728,0.128,43.648,2.944,64.096,8.672    c48.864-33.248,70.336-26.336,70.336-26.336c13.952,35.392,5.184,61.504,2.56,68c16.416,17.984,26.304,40.928,26.304,68.992    c0,98.72-59.84,120.448-116.864,126.816c9.184,7.936,17.376,23.616,17.376,47.584c0,34.368-0.32,62.08-0.32,70.496    c0,6.88,4.608,14.88,17.6,12.352C438.72,472.145,512,375.857,512,262.353C512,120.401,397.376,5.329,255.968,5.329z"
+									fill="#ffffff"
+									data-original="#000000"
+									style=""
+									class=""
+								/>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+
+			<div class="header-nav-wrapper">
+				<label class="gh-search">
+					<input class="gh-search__input" placeholder="Search or jump to..." />
+					<img
+						src="https://github.githubassets.com/images/search-key-slash.svg"
+					/>
+				</label>
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list__item nav-list__item--mobile">Dashboard</li>
+						<li
+							class="nav-list__item nav-list__item--mobile nav-list__item--desktop"
+						>
+							Pull requests
+						</li>
+						<li class="nav-list__item nav-list__item--tablet">Pulls</li>
+						<li class="nav-list__item">Issues</li>
+						<li class="nav-list__item">Marketplace</li>
+						<li class="nav-list__item">Explore</li>
+						<li class="nav-list__item nav-list__item--mobile">Settings</li>
+						<li
+							class="nav-list__item nav-list__item--profile nav-list__item--mobile"
+						>
+							<img
+								class="header-profile__img header-profile__img--avatar user-avatar-img"
+								src="https://avatars2.githubusercontent.com/u/48389765?s=40&v=4"
+							/>
+							<span class="header-profile__text user-avatar-text"></span>
+						</li>
+						<li
+							class="nav-list__item nav-list__item--profile nav-list__item--mobile"
+						>
+							<img
+								class="header-profile__img header-profile__img--signout"
+								src="./assets/images/logout.svg"
+							/>
+							<span class="header-profile__text">Sign out</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header-actions">
+				<div class="header-action-item notification-bell__wrapper">
+					<svg
+						class="notification-bell"
+						viewBox="0 0 510 510"
+						style="enable-background: new 0 0 512 512"
+					>
+						<g xmlns="http://www.w3.org/2000/svg">
+							<g id="notifications-none">
+								<path
+									d="M255,510c28.05,0,51-22.95,51-51H204C204,487.05,226.95,510,255,510z M420.75,357V216.75    c0-79.05-53.55-142.8-127.5-160.65V38.25C293.25,17.85,275.4,0,255,0c-20.4,0-38.25,17.85-38.25,38.25V56.1    c-73.95,17.85-127.5,81.6-127.5,160.65V357l-51,51v25.5h433.5V408L420.75,357z M369.75,382.5h-229.5V216.75    C140.25,153,191.25,102,255,102s114.75,51,114.75,114.75V382.5z"
+									fill="#ffffff"
+									data-original="#000000"
+									style=""
+									class=""
+								/>
+							</g>
+						</g>
+					</svg>
+					<div class="notification-bell__dot"></div>
+				</div>
+				<div class="header-action-item">
+					<svg
+						class="header-icon"
+						fill="#fff"
+						viewBox="0 0 426.66667 426.66667"
+					>
+						<path
+							d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"
+						/>
+					</svg>
+					<img
+						class="header-icon header-icon__arrow-down"
+						src="./assets/images/drop-down-arrow.svg"
+					/>
+				</div>
+				<div class="header-action-item">
+					<img
+						class="header-profile__img header-profile__img--avatar user-avatar-img"
+						src="./assets/images/avatar.png"
+					/>
+					<img
+						class="header-icon header-icon__arrow-down"
+						src="./assets/images/drop-down-arrow.svg"
+					/>
+				</div>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="profile-nav-tab__wrapper profile-nav-tab__wrapper-mid">
+				<div class="nav-avatar">
+					<img
+						class="nav-avatar__img user-avatar-img"
+						src="https://avatars2.githubusercontent.com/u/48389765?s=40&v=4"
+					/>
+					<span class="header-profile__text user-avatar-text"> </span>
+				</div>
+				<nav class="profile-nav-tab">
+					<a class="profile-nav-tab-item">
+						<div class="profile-nav-tab-item__content">
+							<svg
+								class="profile-nav-tab-item__icon"
+								version="1.1"
+								id="Capa_1"
+								height="16"
+								width="auto"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								viewBox="0 0 412.72 412.72"
+								style="enable-background: new 0 0 412.72 412.72"
+								xml:space="preserve"
+							>
+								<g>
+									<g>
+										<path
+											d="M404.72,82.944c-0.027,0-0.054,0-0.08,0h0h-27.12v-9.28c0.146-3.673-2.23-6.974-5.76-8
+				c-18.828-4.934-38.216-7.408-57.68-7.36c-32,0-75.6,7.2-107.84,40c-32-33.12-75.92-40-107.84-40
+				c-19.464-0.048-38.852,2.426-57.68,7.36c-3.53,1.026-5.906,4.327-5.76,8v9.2H8c-4.418,0-8,3.582-8,8v255.52c0,4.418,3.582,8,8,8
+				c1.374-0.004,2.724-0.362,3.92-1.04c0.8-0.4,80.8-44.16,192.48-16h1.2h0.72c0.638,0.077,1.282,0.077,1.92,0
+				c112-28.4,192,15.28,192.48,16c2.475,1.429,5.525,1.429,8,0c2.46-1.42,3.983-4.039,4-6.88V90.944
+				C412.72,86.526,409.139,82.944,404.72,82.944z M16,333.664V98.944h19.12v200.64c-0.05,4.418,3.491,8.04,7.909,8.09
+				c0.432,0.005,0.864-0.025,1.291-0.09c16.55-2.527,33.259-3.864,50-4c23.19-0.402,46.283,3.086,68.32,10.32
+				C112.875,307.886,62.397,314.688,16,333.664z M94.32,287.664c-14.551,0.033-29.085,0.968-43.52,2.8V79.984
+				c15.576-3.47,31.482-5.241,47.44-5.28c29.92,0,71.2,6.88,99.84,39.2l0.24,199.28C181.68,302.304,149.2,287.664,94.32,287.664z
+				 M214.32,113.904c28.64-32,69.92-39.2,99.84-39.2c15.957,0.047,31.863,1.817,47.44,5.28v210.48
+				c-14.354-1.849-28.808-2.811-43.28-2.88c-54.56,0-87.12,14.64-104,25.52V113.904z M396.64,333.664
+				c-46.496-19.028-97.09-25.831-146.96-19.76c22.141-7.26,45.344-10.749,68.64-10.32c16.846,0.094,33.663,1.404,50.32,3.92
+				c4.368,0.663,8.447-2.341,9.11-6.709c0.065-0.427,0.095-0.859,0.09-1.291V98.944h19.12L396.64,333.664z"
+										/>
+									</g>
+								</g>
+							</svg>
+
+							Overview
+						</div>
+					</a>
+					<a class="profile-nav-tab-item">
+						<div class="profile-nav-tab-item__content">
+							<svg
+								class="profile-nav-tab-item__icon"
+								enable-background="new 0 0 512 512"
+								height="16"
+								viewBox="0 0 512 512"
+								width="16"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g>
+									<path
+										d="m88 456c-8.837 0-16-7.164-16-16v-374c0-36.393 29.607-66 66-66h286c8.837 0 16 7.164 16 16v368c0 8.836-7.163 16-16 16s-16-7.164-16-16v-352h-270c-18.748 0-34 15.252-34 34v374c0 8.836-7.163 16-16 16z"
+									/>
+									<path
+										d="m424 512h-280c-39.701 0-72-32.299-72-72s32.299-72 72-72h280c8.837 0 16 7.164 16 16s-7.163 16-16 16h-280c-22.056 0-40 17.944-40 40s17.944 40 40 40h280c8.837 0 16 7.164 16 16s-7.163 16-16 16z"
+									/>
+									<path
+										d="m424 456h-280c-8.837 0-16-7.164-16-16s7.163-16 16-16h280c8.837 0 16 7.164 16 16s-7.163 16-16 16z"
+									/>
+									<path
+										d="m160 400c-8.837 0-16-7.164-16-16v-368c0-8.836 7.163-16 16-16s16 7.164 16 16v368c0 8.836-7.163 16-16 16z"
+									/>
+								</g>
+							</svg>
+							Repositories
+							<span class="profile-nav-tab-item__number"></span>
+						</div>
+					</a>
+					<a class="profile-nav-tab-item">
+						<div class="profile-nav-tab-item__content">
+							<img
+								class="profile-nav-tab-item__icon"
+								src="./assets/images/project.svg"
+								alt="project"
+								height="16px"
+							/>
+							Projects
+						</div>
+					</a>
+					<a class="profile-nav-tab-item">
+						<div class="profile-nav-tab-item__content">
+							<img
+								class="profile-nav-tab-item__icon"
+								src="./assets/images/box.svg"
+								alt="package"
+								height="16px"
+							/>
+							Packages
+						</div>
+					</a>
+				</nav>
+			</div>
+
+			<div class="main-content">
+				<div class="profile-info">
+					<div class="profile-info-header">
+						<img
+							class="profile-info-avatar user-avatar-img"
+							src="./assets/images/avatar.png"
+						/>
+						<button
+							class="profile-info-btn profile-info-status profile-info-status--md"
+							type="button"
+						>
+							<svg
+								class="profile-info-status__smiley"
+								viewBox="0 0 512 512"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="m256 512c-68.38 0-132.667-26.629-181.02-74.98-48.351-48.353-74.98-112.64-74.98-181.02s26.629-132.667 74.98-181.02c48.353-48.351 112.64-74.98 181.02-74.98s132.667 26.629 181.02 74.98c48.351 48.353 74.98 112.64 74.98 181.02s-26.629 132.667-74.98 181.02c-48.353 48.351-112.64 74.98-181.02 74.98zm0-472c-119.103 0-216 96.897-216 216s96.897 216 216 216 216-96.897 216-216-96.897-216-216-216zm93.737 260.188c-9.319-5.931-21.681-3.184-27.61 6.136-.247.387-25.137 38.737-67.127 38.737s-66.88-38.35-67.127-38.737c-5.93-9.319-18.291-12.066-27.61-6.136s-12.066 18.292-6.136 27.61c1.488 2.338 37.172 57.263 100.873 57.263s99.385-54.924 100.873-57.263c5.93-9.319 3.183-21.68-6.136-27.61zm-181.737-135.188c13.807 0 25 11.193 25 25s-11.193 25-25 25-25-11.193-25-25 11.193-25 25-25zm150 25c0 13.807 11.193 25 25 25s25-11.193 25-25-11.193-25-25-25-25 11.193-25 25z"
+								/>
+							</svg>
+							<span class="profile-info-status__text"> Set Status </span>
+						</button>
+						<span class="profile-info-username user-avatar-text"> </span>
+					</div>
+					<button class="profile-info-btn profile-info-status" type="button">
+						<svg
+							class="profile-info-status__smiley"
+							viewBox="0 0 512 512"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="m256 512c-68.38 0-132.667-26.629-181.02-74.98-48.351-48.353-74.98-112.64-74.98-181.02s26.629-132.667 74.98-181.02c48.353-48.351 112.64-74.98 181.02-74.98s132.667 26.629 181.02 74.98c48.351 48.353 74.98 112.64 74.98 181.02s-26.629 132.667-74.98 181.02c-48.353 48.351-112.64 74.98-181.02 74.98zm0-472c-119.103 0-216 96.897-216 216s96.897 216 216 216 216-96.897 216-216-96.897-216-216-216zm93.737 260.188c-9.319-5.931-21.681-3.184-27.61 6.136-.247.387-25.137 38.737-67.127 38.737s-66.88-38.35-67.127-38.737c-5.93-9.319-18.291-12.066-27.61-6.136s-12.066 18.292-6.136 27.61c1.488 2.338 37.172 57.263 100.873 57.263s99.385-54.924 100.873-57.263c5.93-9.319 3.183-21.68-6.136-27.61zm-181.737-135.188c13.807 0 25 11.193 25 25s-11.193 25-25 25-25-11.193-25-25 11.193-25 25-25zm150 25c0 13.807 11.193 25 25 25s25-11.193 25-25-11.193-25-25-25-25 11.193-25 25z"
+							/>
+						</svg>
+						<span> Set Status </span>
+					</button>
+					<button
+						class="profile-info-btn profile-info-edit pointer"
+						type="button"
+					>
+						Edit Profile
+					</button>
+					<div class="profile-info-social">
+						<a class="profile-info-social-item pointer">
+							<svg
+								class="profile-info-icon"
+								version="1.1"
+								id="Capa_1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								viewBox="0 0 512 512"
+								style="enable-background: new 0 0 512 512"
+								xml:space="preserve"
+							>
+								<g>
+									<g>
+										<path
+											d="M392.963,199.597c24.96-20.702,40.886-51.937,40.886-86.823C433.848,50.592,383.258,0.002,321.075,0.002
+					s-112.772,50.59-112.772,112.772c0,8.128,0.872,16.055,2.514,23.7c-6.422-1.14-13.028-1.737-19.772-1.737
+					c-62.183,0-112.772,50.59-112.772,112.772c0,34.883,15.923,66.115,40.879,86.818C49.339,362.789,0,431.394,0,511.317h40.009
+					c0-83.282,67.754-151.035,151.035-151.035c62.183,0,112.772-50.59,112.772-112.772c0-8.128-0.872-16.056-2.514-23.701
+					c6.422,1.14,13.028,1.737,19.772,1.737c49.078,0,92.746,23.544,120.35,59.916l27.111-30.186
+					C448.497,230.958,422.569,211.672,392.963,199.597z M191.045,320.272c-40.121,0-72.763-32.641-72.763-72.763
+					c0-40.122,32.642-72.763,72.763-72.763s72.763,32.642,72.763,72.763S231.166,320.272,191.045,320.272z M321.075,185.536
+					c-40.121,0-72.763-32.641-72.763-72.763c0-40.122,32.642-72.762,72.763-72.762s72.763,32.641,72.763,72.763
+					C393.838,152.897,361.197,185.536,321.075,185.536z"
+										/>
+									</g>
+								</g>
+								<g>
+									<g>
+										<polygon
+											points="482.233,299.903 343.271,454.623 264.851,379.974 237.267,408.954 345.519,511.998 512,326.638 		"
+										/>
+									</g>
+								</g>
+								<g></g>
+							</svg>
+							<span>
+								<strong class="user-followers"> </strong>
+								followers</span
+							>
+						</a>
+
+						&middot;
+
+						<a class="profile-info-social-item pointer">
+							<span><strong class="user-following"> </strong> following</span>
+						</a>
+
+						&middot;
+
+						<a class="profile-info-social-item pointer">
+							<svg
+								class="profile-info-icon"
+								viewBox="0 -10 511.98685 511"
+								width="511pt"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="m114.59375 491.140625c-5.609375 0-11.179688-1.75-15.933594-5.1875-8.855468-6.417969-12.992187-17.449219-10.582031-28.09375l32.9375-145.089844-111.703125-97.960937c-8.210938-7.167969-11.347656-18.519532-7.976562-28.90625 3.371093-10.367188 12.542968-17.707032 23.402343-18.710938l147.796875-13.417968 58.433594-136.746094c4.308594-10.046875 14.121094-16.535156 25.023438-16.535156 10.902343 0 20.714843 6.488281 25.023437 16.511718l58.433594 136.769532 147.773437 13.417968c10.882813.980469 20.054688 8.34375 23.425782 18.710938 3.371093 10.367187.253906 21.738281-7.957032 28.90625l-111.703125 97.941406 32.9375 145.085938c2.414063 10.667968-1.726562 21.699218-10.578125 28.097656-8.832031 6.398437-20.609375 6.890625-29.910156 1.300781l-127.445312-76.160156-127.445313 76.203125c-4.308594 2.558594-9.109375 3.863281-13.953125 3.863281zm141.398438-112.875c4.84375 0 9.640624 1.300781 13.953124 3.859375l120.277344 71.9375-31.085937-136.941406c-2.21875-9.746094 1.089843-19.921875 8.621093-26.515625l105.472657-92.5-139.542969-12.671875c-10.046875-.917969-18.6875-7.234375-22.613281-16.492188l-55.082031-129.046875-55.148438 129.066407c-3.882812 9.195312-12.523438 15.511718-22.546875 16.429687l-139.5625 12.671875 105.46875 92.5c7.554687 6.613281 10.859375 16.769531 8.621094 26.539062l-31.0625 136.9375 120.277343-71.914062c4.308594-2.558594 9.109376-3.859375 13.953126-3.859375zm-84.585938-221.847656s0 .023437-.023438.042969zm169.128906-.0625.023438.042969c0-.023438 0-.023438-.023438-.042969zm0 0"
+								/>
+							</svg>
+							<span> <strong class="user-stars"> </strong></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="profile-nav-tab__wrapper profile-nav-tab__wrapper--mobile">
+					<div class="border-placeholder"></div>
+					<nav class="profile-nav-tab">
+						<a class="profile-nav-tab-item">
+							<div class="profile-nav-tab-item__content">
+								<svg
+									class="profile-nav-tab-item__icon"
+									version="1.1"
+									id="Capa_1"
+									height="16"
+									width="auto"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									x="0px"
+									y="0px"
+									viewBox="0 0 412.72 412.72"
+									style="enable-background: new 0 0 412.72 412.72"
+									xml:space="preserve"
+								>
+									<g>
+										<g>
+											<path
+												d="M404.72,82.944c-0.027,0-0.054,0-0.08,0h0h-27.12v-9.28c0.146-3.673-2.23-6.974-5.76-8
+			c-18.828-4.934-38.216-7.408-57.68-7.36c-32,0-75.6,7.2-107.84,40c-32-33.12-75.92-40-107.84-40
+			c-19.464-0.048-38.852,2.426-57.68,7.36c-3.53,1.026-5.906,4.327-5.76,8v9.2H8c-4.418,0-8,3.582-8,8v255.52c0,4.418,3.582,8,8,8
+			c1.374-0.004,2.724-0.362,3.92-1.04c0.8-0.4,80.8-44.16,192.48-16h1.2h0.72c0.638,0.077,1.282,0.077,1.92,0
+			c112-28.4,192,15.28,192.48,16c2.475,1.429,5.525,1.429,8,0c2.46-1.42,3.983-4.039,4-6.88V90.944
+			C412.72,86.526,409.139,82.944,404.72,82.944z M16,333.664V98.944h19.12v200.64c-0.05,4.418,3.491,8.04,7.909,8.09
+			c0.432,0.005,0.864-0.025,1.291-0.09c16.55-2.527,33.259-3.864,50-4c23.19-0.402,46.283,3.086,68.32,10.32
+			C112.875,307.886,62.397,314.688,16,333.664z M94.32,287.664c-14.551,0.033-29.085,0.968-43.52,2.8V79.984
+			c15.576-3.47,31.482-5.241,47.44-5.28c29.92,0,71.2,6.88,99.84,39.2l0.24,199.28C181.68,302.304,149.2,287.664,94.32,287.664z
+			 M214.32,113.904c28.64-32,69.92-39.2,99.84-39.2c15.957,0.047,31.863,1.817,47.44,5.28v210.48
+			c-14.354-1.849-28.808-2.811-43.28-2.88c-54.56,0-87.12,14.64-104,25.52V113.904z M396.64,333.664
+			c-46.496-19.028-97.09-25.831-146.96-19.76c22.141-7.26,45.344-10.749,68.64-10.32c16.846,0.094,33.663,1.404,50.32,3.92
+			c4.368,0.663,8.447-2.341,9.11-6.709c0.065-0.427,0.095-0.859,0.09-1.291V98.944h19.12L396.64,333.664z"
+											/>
+										</g>
+									</g>
+								</svg>
+
+								Overview
+							</div>
+						</a>
+						<a class="profile-nav-tab-item">
+							<div class="profile-nav-tab-item__content">
+								<svg
+									class="profile-nav-tab-item__icon"
+									enable-background="new 0 0 512 512"
+									height="16"
+									viewBox="0 0 512 512"
+									width="16"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g>
+										<path
+											d="m88 456c-8.837 0-16-7.164-16-16v-374c0-36.393 29.607-66 66-66h286c8.837 0 16 7.164 16 16v368c0 8.836-7.163 16-16 16s-16-7.164-16-16v-352h-270c-18.748 0-34 15.252-34 34v374c0 8.836-7.163 16-16 16z"
+										/>
+										<path
+											d="m424 512h-280c-39.701 0-72-32.299-72-72s32.299-72 72-72h280c8.837 0 16 7.164 16 16s-7.163 16-16 16h-280c-22.056 0-40 17.944-40 40s17.944 40 40 40h280c8.837 0 16 7.164 16 16s-7.163 16-16 16z"
+										/>
+										<path
+											d="m424 456h-280c-8.837 0-16-7.164-16-16s7.163-16 16-16h280c8.837 0 16 7.164 16 16s-7.163 16-16 16z"
+										/>
+										<path
+											d="m160 400c-8.837 0-16-7.164-16-16v-368c0-8.836 7.163-16 16-16s16 7.164 16 16v368c0 8.836-7.163 16-16 16z"
+										/>
+									</g>
+								</svg>
+								Repositories
+								<span class="profile-nav-tab-item__number">35</span>
+							</div>
+						</a>
+						<a class="profile-nav-tab-item">
+							<div class="profile-nav-tab-item__content">
+								<img
+									class="profile-nav-tab-item__icon"
+									src="./assets/images/project.svg"
+									alt="project"
+									height="16px"
+								/>
+								Projects
+							</div>
+						</a>
+						<a class="profile-nav-tab-item">
+							<div class="profile-nav-tab-item__content">
+								<img
+									class="profile-nav-tab-item__icon"
+									src="./assets/images/box.svg"
+									alt="package"
+									height="16px"
+								/>
+								Packages
+							</div>
+						</a>
+					</nav>
+				</div>
+
+				<div class="repositories-info">
+					<div class="search-repositories-input__wrapper">
+						<input
+							class="search-repositories-input"
+							placeholder="Find a respository..."
+						/>
+					</div>
+					<div class="search-result-text-summary__wrapper">
+						<p class="search-result-text-summary">
+							<strong class="search-result-text-summary__repo-number"> </strong>
+							results for <strong> public </strong>
+							repositories
+						</p>
+					</div>
+					<div class="fetch-error">
+						<img
+							class="warning-icon"
+							src="./assets/images/warning.svg"
+							alt="warning"
+						/>
+						<p>
+							Unfortunately, something went wrong while fetching user details
+						</p>
+					</div>
+					<div class="loading">
+						<div></div>
+					</div>
+					<ul class="repositories-list"></ul>
+				</div>
+			</div>
+			<div class="icons-credit">
+				<div>
+					Icons made by
+					<a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+						>Freepik</a
+					>
+					from
+					<a href="https://www.flaticon.com/" title="Flaticon">
+						www.flaticon.com</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<noscript>Please enable javascript to load content for this page</noscript>
+		<script src="./js/script1.js"></script>
+		<script src="./js/script2.js"></script>
+		<script src="./js/script3.js"></script>
+	</body>
+</html>
