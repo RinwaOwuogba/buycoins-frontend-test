@@ -49,6 +49,10 @@
 	background: #fff;
 }
 
+.profile-info-status--md {
+	display: none;
+}
+
 .profile-info-edit {
 	padding: 0.3rem;
 	background-color: var(--color-btn-bg);
