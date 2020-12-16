@@ -236,6 +236,7 @@ const createRepositoriesList = (list, data) => {
 		const node = edge.node;
 		const listItem = {
 			repoName: node.name,
+			repoUrl: node.url,
 			description: node.description,
 			isPrivate: node.isPrivate,
 			repoStars: node.stargazerCount,
